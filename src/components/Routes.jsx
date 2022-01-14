@@ -8,13 +8,10 @@ const Routes = () => {
         <div className='p-4'>
             <Switch>
                 <Route exact path="/">
-                    <Redirect to="/search">
-                        <Search/>
-                    </Redirect>
+                    <Redirect to="/search"/>
                 </Route>
                 <Route exact path={["/search", "/images", "/videos"]}>
                     <Results/>
-
                 </Route>
 
             </Switch>
